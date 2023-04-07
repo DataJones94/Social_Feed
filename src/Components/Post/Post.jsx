@@ -1,24 +1,32 @@
-import React, { useState } from 'react';
-
-
-{/*Post is how you want it to look */}
 
 const Post = (props) => {
-    const [name, setName] = useState('');
-    const [status1, setStatus1] = useState('');
+    return ( 
+        <form>
+            <div className="form-group">
+                <label for ="usr">Name</label>
+                <input type ="text" className="form-control"></input>
+            </div> 
+            <div className="form-group">
+                <label for ="usr">Status</label>
+                <input type ="text" className="form-control"></input>
+                <button type= 'submit'>Create</button>
 
-
-
-    // return ( 
-    //     <form>
-    //         <tr>
-    //         <lable>Name</lable>
-    //         <input type= "string" value={name} onChange={(status) => setName(status.target.value)}/>
-    //         </tr>
-    //         <label>Status</label>
-    //         <input type="string" value={status1} rows ='5' onChange={(status) => setStatus1(status.target.value)}/>
-    //     </form>
-    //  );
+            </div> 
+            <button type ="Button" >Like</button>
+            <button type ="Button" >Dislike</button>    
+            <tbody>
+                {props.parentStatus.map((status) =>{
+                  return(
+                <tr>
+                    <td>{status.name} </td>
+                    <td>{status.status1}</td>
+                </tr>
+                );
+            })}
+            </tbody>
+                
+        </form>
+     );
 }
  
 export default Post;

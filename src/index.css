@@ -1,0 +1,41 @@
+.border-box{
+    border: 1px;
+    border-style: groove;
+    border-color: plum;
+    border-radius: 15px;
+    border-width: 0.3;
+    margin: 1px;
+    background-color: lightblue;
+    margin: 2em;
+    padding: 2em;
+
+}
+
+.font{
+    font: black;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: black;
+
+}
+.border{
+    border: 4px;
+    border-style:hidden;
+    border-color: rgb(74, 3, 74);
+    border-radius: 30px;
+    border-width: 2;
+    margin: 3px;
+    background-color: light green;
+    outline-style: auto;
+    margin: 2em;
+    padding: 2em;
+
+ 
+}
+.isLiked{
+
+}
+
+.isDisliked{
+    
+}

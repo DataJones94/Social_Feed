@@ -1,32 +1,25 @@
-
 const Post = (props) => {
-    return ( 
-        <form>
-            <div className="form-group">
-                <label for ="usr">Name</label>
-                <input type ="text" className="form-control"></input>
-            </div> 
-            <div className="form-group">
-                <label for ="usr">Status</label>
-                <input type ="text" className="form-control"></input>
-                <button type= 'submit'>Create</button>
+  return (
+    <li>
+      <div className="border">
+      <div>Name:  {props.status.name}</div>
+      <div>Status:  {props.status.status1}</div>
+      <div className="border">
 
-            </div> 
-            <button type ="Button" >Like</button>
-            <button type ="Button" >Dislike</button>    
-            <tbody>
-                {props.parentStatus.map((status) =>{
-                  return(
-                <tr>
-                    <td>{status.name} </td>
-                    <td>{status.status1}</td>
-                </tr>
-                );
-            })}
-            </tbody>
-                
-        </form>
-     );
-}
- 
+
+      <div className="buttons">
+        <button type="submit">Like</button>
+        
+        <button type="submit">Dislike</button>
+      </div>
+      </div>
+      </div>
+    </li>
+  );
+};
+
 export default Post;
+{
+  /*Use props to pass down data from the CreatPostForm to Apps to make the status on line 13 recognizable. 
+    After using parentStatus on Apps.js use props.parentStatus */
+}

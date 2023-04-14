@@ -4,6 +4,7 @@ import Post from "./Components/Post/Post";
 import PostList from "./Components/PostList/PostList";
 import NavBar from "./Components/NavBar/NavBar";
 import './index.css'
+import Button from "./Components/Button.jsx";
 
 {
   /*imrs for the import React useState */
@@ -37,7 +38,9 @@ which we know it will have a collection of data. like an empty array [] (we'll u
   return (
     <div>
       <div className="nav">
+      <div className="font">
       <NavBar/>
+      </div> 
       </div> 
       <h1>Create a Post</h1>
 
@@ -51,7 +54,9 @@ which we know it will have a collection of data. like an empty array [] (we'll u
 
       <div className="border">
       <PostList parentStatus={status}/>
+      <Button message="Liked"/>
       </div>
+    
 
     </div>
   );

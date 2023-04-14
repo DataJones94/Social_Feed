@@ -1,9 +1,16 @@
 .nav{
-    background-color: aqua;
+    background-color: lightskyblue;
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     margin: 2em;
     padding: 2em;
     
+
+}
+.font{
+    font: black;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: black;
 
 }

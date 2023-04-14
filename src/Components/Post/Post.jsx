@@ -1,5 +1,7 @@
 const Post = (props) => {
+  // likeAndDislike ? isLiked() : isDisliked();
   return (
+     
     <li>
       <div className="border">
       <div>Name:  {props.status.name}</div>
@@ -9,8 +11,9 @@ const Post = (props) => {
 
       <div className="buttons">
         <button type="submit">Like</button>
-        
+
         <button type="submit">Dislike</button>
+        
       </div>
       </div>
       </div>

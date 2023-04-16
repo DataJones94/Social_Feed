@@ -1,0 +1,17 @@
+.button{
+    color:grey;
+    padding: 15px 32 px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+    
+}
+
+.liked{
+    background-color: green;
+}
+.disliked{
+    background-color: red;
+}

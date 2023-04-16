@@ -39,19 +39,6 @@ the status.target.value properties. */}
 
 
             </div> 
-            {/* <tr>
-            <lable>Name</lable>
-            <input type= "string" value={name} onChange={(status) => setName(status.target.value)}/>
-            </tr>
-            <label>Status</label>
-            <input type="string" value={status1} rows ='5' onChange={(status) => setStatus1(status.target.value)}/>
-             */}
-            {/* <button type= 'submit'>Create</button> */}
-            
-            {/* <div className='buttons'>
-            <button type ="submit" >Like</button>
-            <button type ="submit" >Dislike</button> 
-            </div> */}
 
         </form>
      );

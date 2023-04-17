@@ -9,16 +9,7 @@ const PostList = (props) => {
   
   );
 };
-{/* <tbody>
-{props.parentStatus.map((status) => {
-  return (
-    <tr>
-      <td>{status.name} </td>
-      <td>{status.status1}</td
-    </tr>>
-  );
-})}
-</tbody> */}
+
 export default PostList;
 
 {

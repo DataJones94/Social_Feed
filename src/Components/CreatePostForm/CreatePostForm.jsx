@@ -13,7 +13,9 @@ const CreatePostForm = (props) => {
         status.preventDefault();
         let newStatus = {
             name: name,
-            status1: status1
+            status1: status1,
+            isLiked: false,
+            isDisliked: false,
         };
         console.log(newStatus)
         props.addNewStatus(newStatus)
@@ -21,9 +23,7 @@ const CreatePostForm = (props) => {
     }
 
 
-{/*the input boxes on CreatPostForm- I get an error saying the status is not iterable. The input 
-boxes on the Post do not give me an error. I'm not sure if I need these inboxes because of
-the status.target.value properties. */}
+
     return ( 
         <form onSubmit={handleSubmit}>
             <div className="form-group">

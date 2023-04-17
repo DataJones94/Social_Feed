@@ -27,8 +27,8 @@ which we know it will have a collection of data. like an empty array [] (we'll u
   }
 
   const [status, setStatus] = useState([
-    { name: "Chicken Little", status1: "Every day is a new day!" },
-    { name: "Elsa", status1: "Let it go." },
+    { name: "Chicken Little", status1: "Every day is a new day!" ,isLiked: true, isDisliked: false},
+    { name: "Elsa", status1: "Let it go.",isLiked: false, isDisliked: true },
   ]);
 
   function addNewStatus(newStatus) {
@@ -54,8 +54,8 @@ which we know it will have a collection of data. like an empty array [] (we'll u
 
       <div className="border">
       <PostList parentStatus={status}/>
-      <Button message="liked"/>
-      <Button message="disliked"/>
+      
+      
       </div>
         
 
